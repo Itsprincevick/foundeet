@@ -17,7 +17,7 @@
 body {
   width: 100%;
   margin: 0;
-  background-image: url(/public/assets/desktop\ bg.png);
+  background-image: url('/public/assets/desktop\ bg.png');
   background-repeat: no-repeat;
   background-position: right;
   background-size: 85%;
@@ -88,7 +88,7 @@ Responsive Design
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   body {
-    background-image: url(/public/assets/mobile\ bg.png);
+    background-image: url('/public/assets/mobile\ bg.png');
     background-size: 100%;
     background-position: bottom;
   }
@@ -126,7 +126,7 @@ Responsive Design
 /*----------- iPads----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   body {
-    background-image: url(/public/assets/tab\ bg.png);
+    background-image: url('/public/assets/tab\ bg.png');
     background-position: bottom;
     background-size: 100%;
   }
