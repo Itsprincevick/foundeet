@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: o;
+  box-sizing: border-box;
+}
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #011350;
+  --secondary-color: #111111;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  background-image: url(public/assets/desktop\ bg.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 85%;
+  font-family: Montserrat, sans-serif;
+  height: 100vh;
+  overflow: hidden;
+}
+header {
+  display: flex;
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+  justify-content: center;
+}
+
+.header {
+  display: flex;
+  width: 80%;
+  gap: 1rem;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+  width: 48px;
+}
+
+.header p {
+  font-size: 2rem;
+  color: var(--primary-color);
+  font-family: Lato, sans-serif;
+  font-weight: 700;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  line-height: 1.5;
+}
+
+section {
+  width: 80%;
+}
+
+h1 {
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  color: var(--primary-color);
+  font-size: 120px;
+  margin-bottom: 1rem;
+}
+
+main p {
+  width: 590px;
+  color: var(--secondary-color);
+  font-size: 1.05rem;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+/*
+====================
+Responsive Design
+====================
+*/
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  body {
+    background-image: url(public/assets/mobile\ bg.png);
+    background-size: 100%;
+    background-position: bottom;
+  }
+  main {
+    padding: 0.8rem;
+    width: 100%;
+    transform: translateY(50%);
+    line-height: 1.5;
+  }
+  .logo {
+    height: 28px;
+    width: 26px;
+  }
+  .header {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .header p {
+    font-size: 1.5rem;
+  }
+  h1 {
+    font-size: 2.1rem;
+    margin-bottom: 0.5rem;
+  }
+  section {
+    width: 100%;
+    text-align: center;
+  }
+  main p {
+    width: 100%;
+    font-size: 1rem;
+  }
+}
+
+/*----------- iPads----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  body {
+    background-image: url(public/assets/tab\ bg.png);
+    background-position: bottom;
+    background-size: 100%;
+  }
+  main {
+    padding: 0.8rem;
+    width: 100%;
+    transform: translateY(50%);
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 5.5rem;
+  }
+}
